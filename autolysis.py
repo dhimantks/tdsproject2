@@ -1,18 +1,15 @@
-#[project]
-#name = "project2"
-#version = "0.1.0"
-#description = "Add your description here"
-#readme = "README.md"
-#requires-python = ">=3.9"
-#dependencies = [
-#    "markdown>=3.7",
-#    "openai==0.28",
-#   "pandas>=2.2.3",
-#    "scikit-learn>=1.6.0",
-#    "seaborn>=0.13.2",
-#    "tabulate>=0.9.0",
-#    "tenacity>=9.0.0",
-#]
+# /// script
+# requires-python = ">=3.9"
+# dependencies = [
+#    "markdown",
+#    "openai",
+#    "pandas",
+#    "scikit-learn",
+#    "seaborn",
+#    "tabulate",
+#    "tenacity",
+# ]
+#///
 
 
 import os
