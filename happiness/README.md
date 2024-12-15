@@ -10,7 +10,7 @@ The dataset was born from the collaborative efforts of researchers and statistic
 
 One fateful day, a data analyst named Alex stumbled upon "The Global Happiness Chronicles." Intrigued by its potential, Alex donned the mantle of an explorer, ready to embark on a quest through the dense jungle of data. Armed with a trusty laptop and a heart full of curiosity, Alex set out to uncover the stories hidden within the rows and columns.
 
-The first step of the journey involved cleansing the dataset, a necessary rite of passage. Alex meticulously examined each column, ensuring that the data was pristine and ready for exploration. With a keen eye, Alex noted that while most columns were complete, a few—like "Log GDP per capita" and "Generosity"—contained missing values, hinting at the complexity of human experience that numbers alone could not encapsulate.
+The first step of the journey involved cleansing the dataset, a necessary rite of passage. Alex meticulously examined each column, ensuring that the data was pristine and ready for exploration. With a keen eye, Alex noted that while most columns were complete, a fewâ€”like "Log GDP per capita" and "Generosity"â€”contained missing values, hinting at the complexity of human experience that numbers alone could not encapsulate.
 
 With the dataset polished and gleaming, Alex began the analysis, navigating through the various dimensions of happiness. The journey was exhilarating, akin to traversing a vast landscape filled with peaks of joy and valleys of despair. Alex delved into the "Life Ladder," a metric reflecting how individuals rated their lives on a scale from 0 to 10. This column served as a compass, guiding Alex through the terrain of happiness across different nations.
 
@@ -62,19 +62,19 @@ The second visualization, **dataset_Country name_countplot.png**, showcased the 
 
 ## Introduction: The Dataset as a Character and Its Context
 
-In a realm where numbers danced and data whispered secrets, there lived a dataset named "The Global Happiness Index." This dataset was no ordinary collection of figures; it was a vibrant tapestry woven from the lives and experiences of people across the globe. With 2,363 rows and 11 columns, it held the stories of nations, years, and the intangible essence of happiness itself. Each entry was a snapshot in time, capturing the hopes, struggles, and dreams of individuals from diverse corners of the Earth—Burkina Faso, Germany, Australia, Norway, and Uzbekistan were just a few of the many characters in this grand narrative.
+In a realm where numbers danced and data whispered secrets, there lived a dataset named "The Global Happiness Index." This dataset was no ordinary collection of figures; it was a vibrant tapestry woven from the lives and experiences of people across the globe. With 2,363 rows and 11 columns, it held the stories of nations, years, and the intangible essence of happiness itself. Each entry was a snapshot in time, capturing the hopes, struggles, and dreams of individuals from diverse corners of the Earthâ€”Burkina Faso, Germany, Australia, Norway, and Uzbekistan were just a few of the many characters in this grand narrative.
 
 The dataset was discovered in an unassuming digital archive, a treasure trove of information waiting to be unearthed. Its columns spoke of life ladders, GDP per capita, social support, and more. But the dataset was lonely, yearning for someone to explore its depths and reveal the insights hidden within.
 
 ## The Journey: The Analysis Process as a Discovery Adventure
 
-With a spark of curiosity, a data analyst named Alex embarked on a quest to unlock the secrets of this dataset. Armed with tools of visualization and analysis, Alex dove into the intricate web of data. The journey began with an exploration of the dataset’s structure. Each column revealed its purpose: "Life Ladder" measured happiness, "Log GDP per capita" represented economic strength, while "Social Support" gauged community ties.
+With a spark of curiosity, a data analyst named Alex embarked on a quest to unlock the secrets of this dataset. Armed with tools of visualization and analysis, Alex dove into the intricate web of data. The journey began with an exploration of the datasetâ€™s structure. Each column revealed its purpose: "Life Ladder" measured happiness, "Log GDP per capita" represented economic strength, while "Social Support" gauged community ties.
 
 As Alex navigated through the data, a sense of adventure filled the air. The first challenge was to understand the relationships between different variables. What connected happiness to GDP? How did social support influence life satisfaction? With each question, Alex felt the thrill of discovery, like a treasure hunter searching for hidden gems.
 
 ## The Insights: The Major Findings as Revelations
 
-As the analysis progressed, profound insights emerged, illuminating the interconnectedness of life’s many facets. The first revelation came from the correlation between "Log GDP per capita" and "Life Ladder." The data unveiled a compelling connection: nations with higher GDP tended to report greater happiness. However, the story was not solely about wealth; social support played a crucial role. Countries with robust community ties and support systems often had higher life satisfaction, even if their GDP was modest.
+As the analysis progressed, profound insights emerged, illuminating the interconnectedness of lifeâ€™s many facets. The first revelation came from the correlation between "Log GDP per capita" and "Life Ladder." The data unveiled a compelling connection: nations with higher GDP tended to report greater happiness. However, the story was not solely about wealth; social support played a crucial role. Countries with robust community ties and support systems often had higher life satisfaction, even if their GDP was modest.
 
 Another enlightening discovery was the impact of "Freedom to make life choices" on happiness. The data suggested that individuals who felt empowered to shape their destinies experienced greater joy. This insight resonated deeply, reinforcing the notion that happiness is not merely a product of material wealth but also of autonomy and self-determination.
 
@@ -86,7 +86,7 @@ To bring these insights to life, Alex turned to visualizations, crafting a serie
 
 The second visualization, a **count plot of countries** (dataset_Country name_countplot.png), showcased the diversity of the dataset. It illustrated how many entries each country contributed to the dataset, highlighting the voices of nations both large and small. This visual representation underscored the global nature of the dataset, reminding viewers that happiness transcends borders.
 
-![Country Name Count Plot](dataset_Country name_countplot.png)
+![Country Name Count Plot](dataset_Country_name_countplot.png)
 
 ## Conclusion: The Impact
 
@@ -94,6 +94,6 @@ The second visualization, a **count plot of countries** (dataset_Country name_co
 ![dataset_correlation_heatmap.png](dataset_correlation_heatmap.png)
 
 **Figure: Dataset Correlation Heatmap**
-![dataset_Country name_countplot.png](dataset_Country name_countplot.png)
+![dataset_Country name_countplot.png](dataset_Country_name_countplot.png)
 
 **Figure: Dataset Country Name Countplot**
