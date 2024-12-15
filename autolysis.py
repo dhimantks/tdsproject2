@@ -1,3 +1,20 @@
+'''[project]
+name = "project2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "markdown>=3.7",
+    "openai==0.28",
+    "pandas>=2.2.3",
+    "scikit-learn>=1.6.0",
+    "seaborn>=0.13.2",
+    "tabulate>=0.9.0",
+    "tenacity>=9.0.0",
+]'''
+
+
 import os
 import sys
 import pandas as pd
@@ -22,13 +39,13 @@ openai.api_key = get_aiproxy_token()
 # Change the OpenAI API base URL (for aiproxy)
 openai.api_base = "https://aiproxy.sanand.workers.dev/openai/v1" 
 
-def call_openai(prompt, model="gpt-4o-mini"):
+def call_openai(prompt, model="gpt-4o-mini"):    #aiproxy supports gpt-4o-mini only
     """Calls OpenAI ChatCompletion API."""
-    try:
+    try:                                                             #was getting error in this step had to use openai 0.28 (mentioned in the inline dependencies)
         response = openai.ChatCompletion.create(
             model=model,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=1500,
+            max_tokens=1500,                                         #was intially using 50-100 token which resulted in poor plots and readme files having less content...increased in to 1500 for an engaging narrative.
             temperature=0.5,
         )
         return response['choices'][0]['message']['content'].strip()
@@ -126,7 +143,7 @@ def generate_readme(summary, png_files):
         f"4. Write a minimum of 500 words in Markdown format.\n"
     )
 
-    # Call the LLM and handle truncation issues
+    # Call the LLM and handle truncation issues (had to take help of chatgpt in this step to handle the error of some sentences in the readme file getting cutoff from mid sentences)
     story_part1 = call_openai(prompt + "Write the introduction and journey sections only.")
     story_part2 = call_openai(prompt + "Write the insights and visualizations sections only.")
     story_part3 = call_openai(prompt + "Write the conclusion and summarize the full narrative.")
@@ -180,7 +197,7 @@ if __name__ == "__main__":
         dataset_summary = summarize_dataset(df)
         generated_images = visualize_data(df)
 
-        # Perform clustering (if applicable)
+        # Perform clustering (if applicable)  additional file..
         clustering_result = detect_clusters(df)
         if isinstance(clustering_result, pd.DataFrame):
             clustering_result.to_csv("clustering_result.csv", index=False)
