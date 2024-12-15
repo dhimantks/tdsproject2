@@ -25,12 +25,11 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
-API_TOKEN_ENV_VAR = "AIPROXY_TOKEN"
 # Get the AIProxy API Key from environment variables
 def get_aiproxy_token():
-    token = os.getenv(API_TOKEN_ENV_VAR)
+    token = os.environ["AIPROXY_TOKEN"]
     if not token:
-        raise EnvironmentError(f"Environment variable {API_TOKEN_ENV_VAR} not found.")
+        raise EnvironmentError(f"Environment variable AIPROXY_TOKEN not found.")
     return token
 
 # Set the AIProxy API Key and Base URL
